@@ -1,10 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = (props) => {
-  const toggleMode = e => {
-    e.preventDefault();
-    props.setGeceModu(!props.geceModu);
-  };
+  const { geceModu, setGeceModu, toggleMode } = props;
 
   return (
     <nav className="navbar">
@@ -12,7 +9,7 @@ const Navbar = (props) => {
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
-          className={props.geceModu ? 'toggle toggled' : 'toggle'}
+          className={geceModu ? "toggle toggled" : "toggle"}
         />
       </div>
     </nav>

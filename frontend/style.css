@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -136,7 +136,7 @@ table {
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -160,13 +160,14 @@ img {
 .flex-spacer {
   width: 100%;
 }
-
+/* gündüz modunda tüm app i saran class gece modunda bu kalıyor yanına .dark-mode ekleniyor*/
 .App {
   font-family: sans-serif;
   text-align: center;
   width: 100%;
 }
-
+/* bu kısım aslında header kısmı ve iki modda da farklı ama değişimi bu classla değil bir üstteki ile yapmışlar  */
+/* bu kısımdakiler iki mod için de aynı olanlar */
 .navbar {
   align-items: center;
   border-bottom: 1px solid rgb(221, 221, 221);
@@ -179,7 +180,7 @@ img {
   -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
-
+/* bu kısım iki modda da değişmiyor */
 .dark-mode__toggle {
   background: papayawhip;
   border-radius: 50px;
@@ -188,7 +189,8 @@ img {
   position: relative;
   width: 40px;
 }
-
+/* bu kısımda iki moddaki tek değişiklik sağa sola kayma*/
+/* yumuşak kaymayı transition sağlıyor */
 .toggle {
   background: #f68819;
   border-radius: 50px;
@@ -229,8 +231,8 @@ img {
 .coin__title {
   display: block;
   margin-left: 8px;
-    min-width: 160px;
-text-align: left;
+  min-width: 160px;
+  text-align: left;
 }
 
 .coin__symbol {
@@ -241,13 +243,14 @@ text-align: left;
 .coin__logo {
   width: 50px;
 }
-
+/* app classının yanına eklenen class */
 .dark-mode {
   color: #fff;
   background-color: #313843;
 }
 
+/* bu iki class a da sahip demek değil .dark-mode classının altındaki .navbar classına sahip olanlar  */
 .dark-mode .navbar {
-  background-color: #1F2022;
+  background-color: #1f2022;
   border: none;
 }
